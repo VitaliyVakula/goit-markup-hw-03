@@ -3,48 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="page">
 <!-- Верхняя линия -->
 
-<header>
-    <nav>
-        <a href="./index.html" class="logo">
-            <span class="web">Web</span>Studio
-        </a>
-        <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li><a href="./portfolio.html" class="link curent">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+<div class="container">
+    <header class="page-header">
+        <nav>
+            <a href="./index.html" class="logo">
+                <span class="web">Web</span>Studio
+            </a>
+            <ul class="site-nav list">
+                <li><a href="./index.html" class="link">Студия</a></li>
+                <li><a href="./portfolio.html" class="link curent">Портфолио</a></li>
+                <li><a href="" class="link">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="auth-nav list">
+            <li> <a href="mailto:info@devstudio.com"> info@devstudio.com </a></li>
+            <li> <a href="tel:+38-096-111-11-11"> +38 096 111 11 11 </a></li>
         </ul>
-    </nav>
-    <ul class="auth-nav list">
-        <li> <a href="mailto:info@devstudio.com" class="link"> info@devstudio.com </a></li>
-        <li> <a href="tel:+38-096-111-11-11" class="link"> +38 096 111 11 11 </a></li>
-    </ul>
-</header>
-<main>
+    </header>
+    <main>
     <!-- Фильтр -->
-    <div>
+    <div class="filters">
         <!--<h1> Фильтры </h1>-->
         <ul>
-            <li><a href="button" class="btn">Все</a></li>
-            <li><a href="button" class="btn">Веб-сайты</a></li>
-            <li><a href="button" class="btn">Приложения</a></li>
-            <li><a href="button" class="btn">Дизайн</a></li>
-            <li><a href="button" class="btn">Маркетинг</a></li>
-        
+            <li><a href="button" class="btn-filters">Все</a></li>
+            <li><a href="button" class="btn-filters">Веб-сайты</a></li>
+            <li><a href="button" class="btn-filters">Приложения</a></li>
+            <li><a href="button" class="btn-filters">Дизайн</a></li>
+            <li><a href="button" class="btn-filters">Маркетинг</a></li>
         </ul>
     </div>
     <!-- Нашы Проэкты -->
-
-    <section class="project"> 
+        <section class="project"> 
         <!-- <h1>Нашы Проэкты</h1> -->
+        <div class="div-project">
         <ul>
             <li>
                 <img src="./images/project-1.jpg" alt="Технокряк" width="370" height="294">
@@ -92,18 +93,22 @@
                 <p class="project-text">Приложение</p>
             </li>
         </ul>
-    </section>
-</main>
+        </div>
+        </section>
+    </main>
+
 
 <!-- Подвал -->
 
 <footer class="footer">
-    <div>
+    <div class="nav-container">
         <nav>
             <a href="./index.html" class="logo">
                 <span class="web-footer">Web</span><span class="studio-footer">Studio</span>
             </a>
         </nav>
+    </div>
+    <div class="auth-nav-container">
         <ul class="auth-nav list">
             <li><a href="https://www.google.com/maps/d/viewer?msa=0&mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732700000001%2C30.538092&z=17"
                     class="location link">г.Киев, пр-т Леси Украинки, 26</a></li>
@@ -112,5 +117,6 @@
         </ul>
     </div>
 </footer>
+</div>
 </body>
 </html>
