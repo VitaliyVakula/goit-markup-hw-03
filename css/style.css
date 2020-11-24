@@ -42,7 +42,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -161,10 +161,10 @@ a {
 .auth-nav .item + .item {
   margin-left: 50px;
 }
-
+/*
 .auth-nav .list {
 }
-
+*/
 .auth-nav a {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -178,6 +178,7 @@ a {
 .hero {
   background-color: var(--primary-bg-hero-color);
   text-align: center;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -210,10 +211,22 @@ a {
 }
 
 .features {
+  display: flex;
+  flex-wrap: wrap;
+
   margin-bottom: 94px;
 }
 
-.features-title {
+.features .item {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.features .item:last-child {
+  margin-right: 0;
+}
+
+.features-text .features-title {
   color: var(--primary-text-color);
   margin-top: 0;
   margin-bottom: 10px;
@@ -237,11 +250,31 @@ a {
 
 /* Work */
 
+.section-title {
+  margin-bottom: 50px;
+}
+
 .work-title {
+  display: flex;
+  align-items: center;
+
   margin-bottom: 94px;
 }
 
+.work-title .item {
+  margin-right: 30px;
+}
+
 /* Team */
+
+.dream-team {
+  display: flex;
+  align-items: center;
+}
+
+.dream-team .item {
+  margin-right: 30px;
+}
 
 .team-title {
   color: var(--primary-text-color);
