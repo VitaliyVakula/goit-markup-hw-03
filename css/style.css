@@ -112,6 +112,10 @@ a {
   align-items: center;
 }
 
+.portfolio {
+  margin-bottom: 94px;
+}
+
 /* site nav */
 
 .nav-container {
@@ -274,6 +278,7 @@ a {
 
 .dream-team .item {
   margin-right: 30px;
+  margin-bottom: 94px;
 }
 
 .team-title {
@@ -312,7 +317,17 @@ a {
 
   padding: 6px 22px;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 34px;
+}
+
+.filters-item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.filters .item {
+  margin-right: 8px;
 }
 
 .btn-filters:hover,
@@ -339,10 +354,7 @@ a {
   border-radius: 4px;
 }
 
-/* Портфолио Main */
-
-.project {
-}
+/* Нашы проэкты */
 
 .project-title {
   color: var(--primary-text-color);
@@ -368,5 +380,18 @@ a {
   padding: 0;
 }
 
-.div-project {
+.project-element {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+  width: 380px;
+  height: 404px;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0;
 }
