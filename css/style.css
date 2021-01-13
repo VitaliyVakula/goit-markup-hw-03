@@ -19,6 +19,7 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 
@@ -371,6 +372,10 @@ a {
   flex-wrap: nowrap;
   justify-content: center;
   margin-right: 8px;
+}
+
+.filters .item:last-child {
+  margin-right: 0;
 }
 
 .btn-filters:hover,
