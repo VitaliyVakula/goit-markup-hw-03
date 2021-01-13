@@ -362,13 +362,14 @@ a {
   margin-bottom: 34px;
 }
 
-.filters-item {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+.filters {
+  padding-bottom: 0;
 }
 
 .filters .item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   margin-right: 8px;
 }
 
