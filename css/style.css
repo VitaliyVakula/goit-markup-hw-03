@@ -52,6 +52,12 @@ a {
   padding-bottom: 94px;
 }
 
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 /* page-header */
 
 .page-header {
@@ -294,6 +300,7 @@ a {
 
 .team {
   background-color: var(--primary-bt-color);
+  text-align: center;
 }
 
 .dream-team {
@@ -311,9 +318,10 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-
+  justify-content: center;
   margin: 0;
-  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .team-text {
@@ -322,9 +330,24 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-
   margin: 0;
-  padding: 0;
+  padding-bottom: 30px;
+}
+
+.card {
+  display: block;
+}
+
+.card-team {
+  background: #ffffff;
+  display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-image {
+  display: block;
 }
 
 /* Button */
