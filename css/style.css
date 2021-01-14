@@ -343,11 +343,15 @@ img {
   display: block;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  overflow: hidden;
 }
 
 .card-image {
   display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* Button */
@@ -408,20 +412,26 @@ img {
 
 /* Нашы проэкты */
 
+.project {
+}
+
 .project-title {
   color: var(--primary-text-color);
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 
   letter-spacing: 0.06em;
 
+  padding-bottom: 4px;
   margin: 0;
-  padding: 0;
 }
 
 .project-text {
   color: var(--title-text-color);
+  font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -440,12 +450,46 @@ img {
 .project-item {
   width: calc((100%-60px) / 3);
   margin-right: 30px;
+  margin-bottom: 23px;
   width: 370px;
   height: 404px;
 }
 
 .project-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.card-project {
+  background: #ffffff;
+  display: block;
+  overflow: hidden;
+}
+
+.card-project-text {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 27px;
+
+  box-sizing: border-box;
+
+  /* Установит стили правой рамки */
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+
+  /* Установит стили нинжней рамки */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+
+  /* Установит стили левой рамки */
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+}
+
+.card-image-project {
 }
 
 .portfolio {
